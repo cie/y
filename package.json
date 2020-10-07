@@ -2,14 +2,17 @@
   "name": "y",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib",
   "scripts": {
     "test": "mocha",
-    "dev": "mocha --watch"
+    "test:watch": "mocha --watch --watch-files test,lib",
+    "mutate": "stryker run"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@stryker-mutator/core": "^4.0.0",
+    "@stryker-mutator/mocha-runner": "^4.0.0",
     "js-yaml": "^3.14.0",
     "mocha": "^8.1.3"
   }

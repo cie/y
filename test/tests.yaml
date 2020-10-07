@@ -1,0 +1,36 @@
+primitive values:
+  numbers:
+    input: 0
+    expect: 0
+  null:
+    input: null
+    expect: null
+
+errors:
+  undefined function:
+    input:
+      qq: 3
+    expect:
+      ReferenceError: qq is not defined
+
+builtin functions:
+  and:
+    input:
+      and:
+        and: 3
+    expect: 3
+  math:
+    +:
+      input:
+        +:
+          - 5
+          - 0
+      expect: 5
+  quote:
+    input:
+      quote:
+        x: 3
+        y: 5
+    expect:
+      x: 3
+      y: 5

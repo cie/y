@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dev": "mocha --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "js-yaml": "^3.14.0",
+    "mocha": "^8.1.3"
+  }
+}
